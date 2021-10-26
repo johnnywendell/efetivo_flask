@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" {{  url_for('static', filename='style.css')  }}">
+    <title>EFETIVO MONSERTEC</title>
+</head>
+<body>
+     <header>
+        <div class="container">
+            <a href="/pacote/" class="empresa"><img src="{{  url_for('static', filename='monsertec.png')  }}" alt="logo"></a>
+            <nav>
+                <a href="#">Início</a>
+                <a href="/pacote">Pacotes</a>
+                <a href="#">Planejador</a>
+                <a href="/create_pacote">Efetivo</a>
+                <a href="#">Disciplinas</a>
+            </nav>
+        </div>
+    </header>
+    {% block content %} {% endblock %}
+
+</body>
+</html>

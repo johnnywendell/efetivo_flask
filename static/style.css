@@ -1,0 +1,112 @@
+:root{
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+body{
+    background: url('fundo.jpg');
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row; /*default não precisa declarar*/
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%);
+
+}
+.empresa img{
+    width: 300px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: white;
+}
+.pacote {
+    text-decoration: none;
+    color: #00008B;
+    margin: 10px;
+}
+.spanar{
+     text-decoration: none;
+     color: #00008B;
+     margin: 0;
+     padding: 0;
+}
+
+a {
+    margin: 20px;
+}
+body .content {
+
+    margin: 10px;
+    border: solid #000;
+    border-width: 1px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%);
+    width: 300px;
+}
+
+.form-group {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+.form-group label{
+    font-weight: bold;
+}
+
+.form-control {
+    margin-left: 1rem;
+    display: block;
+    width: 80%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    font-weight: bold;
+
+    padding: 15px 30px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+    border: solid#aaa 1px;
+    margin: 0 15px;
+}
+.botao:hover{
+    background-color: white ;
+    color: black;
+}
+
+
+

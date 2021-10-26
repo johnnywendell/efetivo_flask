@@ -1,0 +1,19 @@
+{% extends 'root.html' %}
+
+{% block content %}
+
+<h1>{% block title %} ADICIONAR NOVO PACOTE {% endblock %}</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label for="title">NOME PACOTE:</label>
+        <input type="text" name="nome"
+               placeholder="Pacote nome" class="form-control"
+               value="{{ request.form['nome'] }}"></input>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="botao">Adicionar</button>
+    </div>
+</form>
+
+{% endblock %}
